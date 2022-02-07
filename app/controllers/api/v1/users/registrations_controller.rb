@@ -1,5 +1,4 @@
-class RegistrationsController < ApplicationController
-
+class Api::V1::Users::RegistrationsController < ApplicationController
   def create
     user = User.create!(
       validate_params
